@@ -1,0 +1,17 @@
+{
+  "name": "roblox-multi-instance-manager",
+  "version": "1.0.0",
+  "description": "Standalone Roblox Multi-Instance Manager based on research of 19+ projects",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["roblox", "multi-instance", "multibloxy", "gaming"],
+  "author": "Multi-Instance Research Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,38 @@
+
+> rest-express@1.0.0 dev
+> cross-env NODE_ENV=development tsx server/index.ts
+
+Initialized Windows hooks for action capture
+Detected 2 Roblox installations
+Enabling multi-instance registry support...
+Creating registry backups before modifications...
+Error scanning RobloxPlayerBeta: SyntaxError: Unexpected token 'P', "PowerShell"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at RobloxProcessDetector.scanRobloxPlayer (C:\Users\JAC\Documents\app-package\server\roblox-process-detector.ts:191:25)
+    at async RobloxProcessDetector.scanForProcesses (C:\Users\JAC\Documents\app-package\server\roblox-process-detector.ts:109:33)
+    at async RobloxProcessDetector.startMonitoring (C:\Users\JAC\Documents\app-package\server\roblox-process-detector.ts:73:5)
+Could not backup registry path HKEY_CURRENT_USER\Software\Roblox Corporation\Environments\roblox-player (may not exist)
+Mutex bypass initialized
+Could not backup registry path HKEY_CURRENT_USER\Software\Roblox Corporation\Environments\roblox-studio (may not exist)
+Applying multi-instance registry modifications...
+Server running on port 5000
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen ENOTSUP: operation not supported on socket 127.0.0.1:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1918:21)
+    at listenInCluster (node:net:1997:12)
+    at node:net:2206:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'ENOTSUP',
+  errno: -4049,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 5000
+}
+
+Node.js v24.11.0
